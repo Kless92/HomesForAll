@@ -1,11 +1,69 @@
+/*Basice changes for the whole page*/
+body{
+    background-image: linear-gradient(to right, #841aa9, #ce3f6d, #d65bbe, #2ba8d8, #1d189c);
+}
+
 .container{
-    text-align: center;
+    text-align: center;  
 }
 .row-content {
     padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px
+    min-height: 200px;
 }
+h1{
+    color: black;
+}
+/*Custom css function to move the carousel closer to the title above*/
+.moveUp{
+    padding-top: 0%;
+}
+/********************/
+/*header and footer*/
+.jumbotron {
+    margin: 0;
+    padding: 50px;
+    background-image: linear-gradient(to right, #841aa9, #ce3f6d, #d65bbe, #2ba8d8, #1d189c);
+    color: black;
+}
+.site-footer {
+    background-image: linear-gradient(to right, #841aa9, #ce3f6d, #d65bbe, #2ba8d8, #1d189c);
+    padding: 20px 0;
+}
+/********************/
+/*Nav tab change to big the table a curve on the corners and blend the tab with the table
+  example by  Jake Lette.  "CodePen: https://codepen.io/JacobLett/pen/oGZwEb"*/
+.nav-tabs{
+    border-bottom: none;
+}
+
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+.nav-tabs .nav-link.active{
+    background-color: white;
+    border: white;  
+    padding: 9px;
+    font-weight: bold;
+    color:#2ba8d8;
+}
+
+.tab-pane.active .tab-pane-blend {
+    padding:2rem;
+    background-color:white;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    margin-bottom:1rem;
+    border:white;
+    color:black;
+}
+
+.tab-pane:first-child .tab-pane-blend{
+    border-top-left-radius: 0;
+}
+/**************************************************************************************/
 
 /*This might need to be edited later for orignality reason*/
 .carousel-caption {
@@ -14,8 +72,15 @@
     top: 0;
     bottom: auto;
 }
+.carousel-inner {
+    background-color: white;
+}
 .carousel {
-    border: solid #37c4dd;
+    border: 10px solid rgb(48, 47, 47);
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 #carouselButton{
     position: absolute;
@@ -38,30 +103,15 @@
     top: 0;
     bottom: auto;
 }
-
-
-
-
-/*.sit-footer and .jumbotron need to be edited*/
-.site-footer {
-    background-image: linear-gradient(#CEC8FF, rgb(88, 194, 236));
-    padding: 20px 0;
+/**********************************************************/
+/*******Border box with curved edges and white bg*********/
+.box{
+    border: 10px solid black;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-color: white;
+    margin-top: 10px;
 }
-
-.jumbotron {
-    margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, #CEC8FF, rgb(88, 194, 236), #ac5f92);
-    color: rgb(56, 53, 53);
-}
-
-.tab-content {
-    border: 1px solid #DDD;
-    border-top: none;
-    padding: 10px;
-}
-
-.nav-tabs{
-    border-left: 2px solid black;
-    border-right:2px solid
-}
+/**********************************************************/
